@@ -1,0 +1,32 @@
+{
+   "Version":"2.0.0.0",
+   "Utility":{
+      "BaseUlt":true
+   },
+   "AIO":{
+      "Anivia":true,
+      "Annie":true,
+      "Ashe":true,
+      "AurelionSol":true,
+      "Blitzcrank":true,
+      "Caitlyn":true,
+      "Cassiopeia":true,
+      "Corki":true,
+      "Draven":true,
+      "Evelynn":true,
+      "Ezreal":true,
+      "Graves":true,
+      "Irelia":true,
+      "Kaisa":true,
+      "Kalista":true,
+      "Lucian":true,
+      "Nasus":true,
+      "Nidalee":true,
+      "Nocturne":true,
+      "Poppy":true,
+      "Qiyana":true,
+      "Senna":true,
+      "Xerath":true,
+      "Zoe":true
+   }
+}
