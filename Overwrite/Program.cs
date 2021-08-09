@@ -42,7 +42,7 @@ namespace Overwrite
                 Console.WriteLine("Add NewPrediction");
 
                 Prediction.SetPrediction("NewPrediction");
-                Console.WriteLine("Set Global Pred to NewOrbwalker");
+                Console.WriteLine("Set Global Pred to NewPrediction");
 
                 // we not support remove SDK prediction, you dont need to remove it
             }
