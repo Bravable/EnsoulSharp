@@ -7,8 +7,8 @@
     <ProjectGuid>{26558192-E267-41F1-B9A0-6ECAB392D1B4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EnsoulSharp.SDK.ThirdPart</RootNamespace>
-    <AssemblyName>EnsoulSharp.SDK.ThirdPart</AssemblyName>
+    <RootNamespace>EnsoulSharp.SDK.ThirdParty</RootNamespace>
+    <AssemblyName>EnsoulSharp.SDK.ThirdParty</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -63,9 +64,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EvadeModule\Skillshot.cs" />
+    <Compile Include="Evades\EvadeCore.cs" />
+    <Compile Include="Evades\ISkillshot.cs" />
+    <Compile Include="Evades\SkillshotType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rendering\DamageIndicator.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Events\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
