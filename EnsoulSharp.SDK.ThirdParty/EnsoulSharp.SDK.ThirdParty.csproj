@@ -64,14 +64,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Evades\EvadeCore.cs" />
+    <Compile Include="Evades\EvadeLibrary.cs" />
     <Compile Include="Evades\ISkillshot.cs" />
-    <Compile Include="Evades\SkillshotType.cs" />
+    <Compile Include="Evades\EvadeSkillshotType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rendering\DamageIndicator.cs" />
+    <Compile Include="Usage\EvadeUsage.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Events\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
