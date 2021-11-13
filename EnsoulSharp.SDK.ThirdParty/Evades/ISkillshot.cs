@@ -68,6 +68,11 @@ namespace EnsoulSharp.SDK.ThirdParty.Evades
         EvadeSkillshotType Type { get; }
 
         /// <summary>
+        ///    Get the skillshot slot.
+        /// </summary>
+        SpellSlot Slot { get; }
+
+        /// <summary>
         ///    The Position is in Skillshot.
         /// </summary>
         /// <param name="position">The position.</param>

@@ -30,7 +30,7 @@ namespace EvadeUsage
         // extraRadius better set unit.BoundingRadius + any value
         public static bool IsDanger(Vector2 position, float extraRadius, bool checkSpellCollision = true)
         {
-            foreach (ISkillshot spell in EvadeLibrary.AllSpells.Values.ToList())
+            foreach (ISkillshot spell in EvadeLibrary.AllSpells["EzEvade"].Values.ToList())
             {
                 if (spell.IsInSide(position, extraRadius, checkSpellCollision))
                 {
