@@ -1,0 +1,560 @@
+[
+  //缺少 阿木木 阿兹尔E
+  {
+    "ChampName": "Aatrox",
+    "SpellSlot": "E",
+    "SpellName": "aatroxe",
+    "SkillType": "Skillshot",
+    "CastRange": 325
+  },
+  {
+    "ChampName": "Ahri",
+    "SpellSlot": "R",
+    "SpellName": "ahritumble",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Amumu",
+    "SpellSlot": "Q",
+    "SpellName": "BandageToss",
+    "SkillType": "Skillshot",
+    "IShookCham": true
+  },
+  {
+    "ChampName": "Akali",
+    "SpellSlot": "E",
+    "SpellName": "akalie",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Akali",
+    "SpellSlot": "E",
+    "SpellName": "akalieb",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Akali",
+    "SpellSlot": "R",
+    "SpellName": "akalir",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Akali",
+    "SpellSlot": "R",
+    "SpellName": "akalirb",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Alistar",
+    "SpellSlot": "W",
+    "SpellName": "headbutt",
+    "SkillType": "Targeted",
+  },
+  {
+    "ChampName": "Azir",
+    "SpellSlot": "E",
+    "SpellName": "azirewrapper",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Braum",
+    "SpellSlot": "W",
+    "SpellName": "braumw",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Caitlyn",
+    "SpellSlot": "E",
+    "SpellName": "caitlynentrapment",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Camille",
+    "SpellSlot": "E",
+    "SpellName": "CamilleEDash2",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Corki", //需要更新
+    "SpellSlot": "W",
+    "SpellName": "carpetbomb",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Diana", //需要更新
+    "SpellSlot": "E",
+    "SpellName": "dianateleport",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Ekko",
+    "SpellSlot": "E",
+    "SpellName": "ekkoe",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Ekko",
+    "SpellSlot": "E",
+    "SpellName": "ekkoeattack",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Elise",
+    "SpellSlot": "Q",
+    "SpellName": "elisespiderqcast",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Evelynn",
+    "SpellSlot": "r",
+    "SpellName": "evelynnr",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Evelynn",
+    "SpellSlot": "E",
+    "SpellName": "EvelynnE2",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Ezreal",
+    "SpellSlot": "E",
+    "SpellName": "EzrealE",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Fiora",
+    "SpellSlot": "Q",
+    "SpellName": "fioraq",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Fizz",
+    "SpellSlot": "Q",
+    "SpellName": "FizzQ",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Galio",
+    "SpellSlot": "E",
+    "SpellName": "galioe",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Gnar",
+    "SpellSlot": "E",
+    "SpellName": "gnarbige",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Gnar",
+    "SpellSlot": "E",
+    "SpellName": "gnare",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Gragas",
+    "SpellSlot": "E",
+    "SpellName": "gragase",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Graves",
+    "SpellSlot": "E",
+    "SpellName": "gravesmove",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Gwen", //需要更新
+    "SpellSlot": "E",
+    "SpellName": "GwenE",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Hecarim",
+    "SpellSlot": "R",
+    "SpellName": "HecarimUlt",
+    "SkillType": "Skillshot",
+    "CastRange": 900
+
+  },
+  {
+    "ChampName": "Hecarim",
+    "SpellSlot": "E",
+    "SpellName": "HecarimRampAttack",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Illaoi",
+    "SpellSlot": "W",
+    "SpellName": "illaoiwattack",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Irelia",
+    "SpellSlot": "Q",
+    "SpellName": "ireliaq",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "JarvanIV",
+    "SpellSlot": "Q",
+    "SpellName": "jarvanivdragonstrike",
+    "SkillType": "Skillshot",
+    "WaitDash": 800,
+    "IShookCham": true
+  },
+  {
+    "ChampName": "Jax",
+    "SpellSlot": "Q",
+    "SpellName": "jaxleapstrike",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Jayce",
+    "SpellSlot": "Q",
+    "SpellName": "jaycetotheskies",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Kaisa",
+    "SpellSlot": "R",
+    "SpellName": "kaisar",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Kassadin",
+    "SpellSlot": "R",
+    "SpellName": "riftwalk",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Katarina",
+    "SpellSlot": "E",
+    "SpellName": "KatarinaE",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Katarina",
+    "SpellSlot": "E",
+    "SpellName": "KatarinaEDagger",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Kayn",
+    "SpellSlot": "Q",
+    "SpellName": "kaynq",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Khazix",
+    "SpellSlot": "E",
+    "SpellName": "khazixe",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Khazix",
+    "SpellSlot": "E",
+    "SpellName": "khazixelong",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Kindred",
+    "SpellSlot": "Q",
+    "SpellName": "kindredq",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Kled",
+    "SpellSlot": "E",
+    "SpellName": "KledE",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Kled",
+    "SpellSlot": "E",
+    "SpellName": "KledE2",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Leblanc",
+    "SpellSlot": "W",
+    "SpellName": "LeBlancW",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Leblanc",
+    "SpellSlot": "R",
+    "SpellName": "LeBlancRW",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "LeeSin",
+    "SpellSlot": "Q",
+    "SpellName": "blindmonkqtwo",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "LeeSin",
+    "SpellSlot": "W",
+    "SpellName": "blindmonkwone",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Leona",
+    "SpellSlot": "E",
+    "SpellName": "leonazenithblade",
+    "SkillType": "Skillshot",
+    "WaitDash": 900,
+    "IShookCham": true
+  },
+  {
+    "ChampName": "Lucian",
+    "SpellSlot": "E",
+    "SpellName": "luciane",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "MonkeyKing",
+    "SpellSlot": "E",
+    "SpellName": "monkeykingnimbus",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Nidalee",
+    "SpellSlot": "W",
+    "SpellName": "pounce",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Nautilus",
+    "SpellSlot": "Q",
+    "SpellName": "NautilusAnchorDragMissile",
+    "SkillType": "Skillshot",
+    "WaitDash": 800,
+    "IShookCham": true
+  },
+  {
+    "ChampName": "Pantheon",
+    "SpellSlot": "W",
+    "SpellName": "PantheonW",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Poppy",
+    "SpellSlot": "E",
+    "SpellName": "PoppyE",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Pyke",
+    "SpellSlot": "E",
+    "SpellName": "pykee",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Qiyana",
+    "SpellSlot": "W",
+    "SpellName": "QiyanaW",
+    "SkillType": "Skillshot",
+    "CastRange": 300
+  },
+  {
+    "ChampName": "Qiyana",
+    "SpellSlot": "E",
+    "SpellName": "QiyanaE",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Quinn",
+    "SpellSlot": "E",
+    "SpellName": "quinne",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Rakan", //需要更新
+    "SpellSlot": "W",
+    "SpellName": "RakanW",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Rammus", //需要更新
+    "SpellSlot": "R",
+    "SpellName": "Tremors2",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Renekton",
+    "SpellSlot": "E",
+    "SpellName": "renektonsliceanddice",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "RekSai",
+    "SpellSlot": "E",
+    "SpellName": "reksaieburrowed",
+    "SkillType": "Skillshot",
+    "WaitDash": 450
+  },
+  {
+    "ChampName": "Rell",
+    "SpellSlot": "W",
+    "SpellName": "RellW_Dismount",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Riven",
+    "SpellSlot": "Q",
+    "SpellName": "riventricleave",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Riven",
+    "SpellSlot": "E",
+    "SpellName": "rivenfeint",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Samira",
+    "SpellSlot": "E",
+    "SpellName": "samirae",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Sejuani",
+    "SpellSlot": "Q",
+    "SpellName": "SejuaniQ",
+    "SkillType": "Skillshot",
+    "CastRange": 700
+  },
+  {
+    "ChampName": "Shaco",
+    "SpellSlot": "Q",
+    "SpellName": "deceive",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Shen",
+    "SpellSlot": "E",
+    "SpellName": "shenE",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Shyvana",
+    "SpellSlot": "R",
+    "SpellName": "shyvanatransformcast",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Sylas",
+    "SpellSlot": "E",
+    "SpellName": "sylase",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Sylas",
+    "SpellSlot": "W",
+    "SpellName": "sylasw",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Talon",
+    "SpellSlot": "Q",
+    "SpellName": "talonqdashattack",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Thresh", //需要更新
+    "SpellSlot": "Q",
+    "SpellName": "threshqleap",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Tristana",
+    "SpellSlot": "W",
+    "SpellName": "TristanaW",
+    "SkillType": "Skillshot",
+    "WaitDash": 450
+  },
+  {
+    "ChampName": "Tryndamere",
+    "SpellSlot": "E",
+    "SpellName": "TryndamereE",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Urgot",
+    "SpellSlot": "E",
+    "SpellName": "UrgotE",
+    "SkillType": "Skillshot",
+    "WaitDash": 450
+  },
+  {
+    "ChampName": "Vayne",
+    "SpellSlot": "Q",
+    "SpellName": "vaynetumble",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Vi",
+    "SpellSlot": "Q",
+    "SpellName": "ViQMissile",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Viego",
+    "SpellSlot": "W",
+    "SpellName": "ViegoWMis",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Warwick",
+    "SpellSlot": "Q",
+    "SpellName": "warwickQ",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "XinZhao",
+    "SpellSlot": "E",
+    "SpellName": "XinZhaoEDash",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Yasuo",
+    "SpellSlot": "E",
+    "SpellName": "yasuoe",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Yone",
+    "SpellSlot": "Q",
+    "SpellName": "yoneq3Missile",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Yuumi",
+    "SpellSlot": "W",
+    "SpellName": "YuumiW",
+    "SkillType": "Targeted"
+  },
+  {
+    "ChampName": "Zac",
+    "SpellSlot": "E",
+    "SpellName": "ZacE",
+    "SkillType": "Skillshot",
+    "WaitDash": 1300,
+    "IShookCham": true
+  },
+  {
+    "ChampName": "Ziggs",
+    "SpellSlot": "W",
+    "SpellName": "ziggsw",
+    "SkillType": "Skillshot"
+  },
+  {
+    "ChampName": "Zeri",
+    "SpellSlot": "E",
+    "SpellName": "ZeriE",
+    "SkillType": "Skillshot"
+  }
+]

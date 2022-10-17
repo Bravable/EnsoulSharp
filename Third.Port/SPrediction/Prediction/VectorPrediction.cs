@@ -54,7 +54,7 @@ namespace SPrediction
         /// <returns>Prediction result as <see cref="VectorResult"/></returns>
         public static VectorResult GetPrediction(AIHeroClient target, float width, float delay, float vectorSpeed, float range, float vectorLenght)
         {
-            return GetPrediction(target, width, delay, vectorSpeed, range, vectorSpeed, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), ObjectManager.Player.PreviousPosition.ToVector2());
+            return GetPrediction(target, width, delay, vectorSpeed, range, vectorSpeed, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), ObjectManager.Player.ServerPosition.ToVector2());
         }
 
         /// <summary>
@@ -124,13 +124,13 @@ namespace SPrediction
                 }
             }
 
-            var immobileFrom = rangeCheckFrom + (target.PreviousPosition.ToVector2() - rangeCheckFrom).Normalized() * range;
+            var immobileFrom = rangeCheckFrom + (target.ServerPosition.ToVector2() - rangeCheckFrom).Normalized() * range;
 
             if (path.Count <= 1) //if target is not moving, easy to hit
             {
                 result.HitChance = HitChance.VeryHigh;
                 result.CastSourcePosition = immobileFrom;
-                result.CastTargetPosition = target.PreviousPosition.ToVector2();
+                result.CastTargetPosition = target.ServerPosition.ToVector2();
                 result.UnitPosition = result.CastTargetPosition;
                 result.CollisionResult = Collision.GetCollisions(immobileFrom, result.CastTargetPosition, range, width, delay, vectorSpeed);
 
@@ -148,7 +148,7 @@ namespace SPrediction
                 {
                     result.HitChance = HitChance.VeryHigh;
                     result.CastSourcePosition = immobileFrom;
-                    result.CastTargetPosition = hero.PreviousPosition.ToVector2();
+                    result.CastTargetPosition = hero.ServerPosition.ToVector2();
                     result.UnitPosition = result.CastTargetPosition;
                     result.CollisionResult = Collision.GetCollisions(immobileFrom, result.CastTargetPosition, range, width, delay, vectorSpeed);
 
@@ -165,7 +165,7 @@ namespace SPrediction
                 if (avgp < 400 && movt < 100)
                 {
                     result.HitChance = HitChance.High;
-                    result.CastTargetPosition = hero.PreviousPosition.ToVector2();
+                    result.CastTargetPosition = hero.ServerPosition.ToVector2();
                     result.CastSourcePosition = immobileFrom;
                     result.UnitPosition = result.CastTargetPosition;
                     result.CollisionResult = Collision.GetCollisions(immobileFrom, result.CastTargetPosition, range, width, delay, vectorSpeed);
@@ -209,7 +209,7 @@ namespace SPrediction
             for (var i = 0; i < path.Count - 1; i++)
             {
                 var point = Geometry.ClosestCirclePoint(rangeCheckFrom, range, path[i]);
-                if (path[i].Distance(ObjectManager.Player.PreviousPosition) < range)
+                if (path[i].Distance(ObjectManager.Player.ServerPosition) < range)
                 {
                     point = path[i];
                 }
@@ -231,7 +231,7 @@ namespace SPrediction
             }
 
             result.CastSourcePosition = immobileFrom;
-            result.CastTargetPosition = target.PreviousPosition.ToVector2();
+            result.CastTargetPosition = target.ServerPosition.ToVector2();
             result.HitChance = HitChance.None;
             return result;
         }
@@ -256,8 +256,8 @@ namespace SPrediction
                 var path = enemy.GetWaypoints();
                 if (path.Count <= 1)
                 {
-                    var from = rangeCheckFrom + (enemy.PreviousPosition.ToVector2() - rangeCheckFrom).Normalized() * range;
-                    var to = from + (enemy.PreviousPosition.ToVector2() - from).Normalized() * vectorLenght;
+                    var from = rangeCheckFrom + (enemy.ServerPosition.ToVector2() - rangeCheckFrom).Normalized() * range;
+                    var to = from + (enemy.ServerPosition.ToVector2() - from).Normalized() * vectorLenght;
                     var colResult = Collision.GetCollisions(from, to, range, width, delay, vectorSpeed);
 
                     if (colResult.Objects.HasFlag(CollisionFlags.EnemyChampions))
@@ -268,7 +268,7 @@ namespace SPrediction
                             result = new VectorAoeResult
                             {
                                 CastSourcePosition = from,
-                                CastTargetPosition = enemy.PreviousPosition.ToVector2(),
+                                CastTargetPosition = enemy.ServerPosition.ToVector2(),
                                 HitCount = collisionCount,
                                 CollisionResult = colResult
                             };

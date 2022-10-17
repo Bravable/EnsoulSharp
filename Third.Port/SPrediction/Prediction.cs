@@ -76,7 +76,7 @@
         /// <returns>Prediction result as <see cref="PredictionResult"/></returns>
         public PredictionResult GetPrediction(AIHeroClient target, float width, float delay, float missileSpeed, float range, bool collisionable, SpellType type)
         {
-            return this.GetPrediction(target, width, delay, missileSpeed, range, collisionable, type, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.PreviousPosition.ToVector2(), ObjectManager.Player.PreviousPosition.ToVector2());
+            return this.GetPrediction(target, width, delay, missileSpeed, range, collisionable, type, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.ServerPosition.ToVector2(), ObjectManager.Player.ServerPosition.ToVector2());
         }
 
         /// <summary>

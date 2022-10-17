@@ -115,7 +115,7 @@ namespace SPrediction
             {
                 var wp = args.Path.Select(p => p.ToVector2()).ToList();
                 var sample1 = new List<Vector2>();
-                wp.Insert(0, sender.PreviousPosition.ToVector2());
+                wp.Insert(0, sender.ServerPosition.ToVector2());
 
                 for (var i = 0; i < wp.Count - 1; i++)
                 {

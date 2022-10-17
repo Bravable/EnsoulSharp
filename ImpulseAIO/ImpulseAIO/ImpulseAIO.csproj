@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3070C9A0-CB33-4FD5-A592-E1627BDF008D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ImpulseAIO</RootNamespace>
+    <AssemblyName>ImpulseAIO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PreBuildEvent />
+    <CscToolPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\Roslyn</CscToolPath>
+    <OutputPath>bin\Release</OutputPath>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EnsoulSharp">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\EnsoulSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EnsoulSharp.SDK">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\EnsoulSharp.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics">
+      <HintPath>E:\EnsoulSharp\Loader\Reference\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Champion\Belveth\Belveth.cs" />
+    <Compile Include="Champion\Blitzcrank\Blitzcrank.cs" />
+    <Compile Include="Champion\Caitlyn\Caitlyn.cs" />
+    <Compile Include="Champion\Ezreal\Ezreal.cs" />
+    <Compile Include="Champion\Irelia\Irelia.cs" />
+    <Compile Include="Champion\Jhin\Jhin.cs" />
+    <Compile Include="Champion\Jinx\Jinx.cs" />
+    <Compile Include="Champion\Kaisa\Kaisa.cs" />
+    <Compile Include="Champion\Kalista\Kalista.cs" />
+    <Compile Include="Champion\Kindred\Kindred.cs" />
+    <Compile Include="Champion\Lucian\Lucian.cs" />
+    <Compile Include="Champion\Orianna\Orianna.cs" />
+    <Compile Include="Champion\Renata\Renata.cs" />
+    <Compile Include="Champion\Samira\Samira.cs" />
+    <Compile Include="Champion\Senna\Senna.cs" />
+    <Compile Include="Champion\Syndra\Syndra.cs" />
+    <Compile Include="Champion\Thresh\Thresh.cs" />
+    <Compile Include="Champion\Tristana\Tristana.cs" />
+    <Compile Include="Champion\TwistedFate\TwistedFate.cs" />
+    <Compile Include="Champion\Twitch\Twitch.cs" />
+    <Compile Include="Champion\Vayne\Vayne.cs" />
+    <Compile Include="Champion\Viktor\Viktor.cs" />
+    <Compile Include="Champion\Xerath\Xerath.cs" />
+    <Compile Include="Champion\Yasuo\Yasuo.cs" />
+    <Compile Include="Champion\Zeri\Zeri.cs" />
+    <Compile Include="Common\Activactor\Activactor.cs" />
+    <Compile Include="Common\Base.cs" />
+    <Compile Include="Common\BaseUlt\BaseUlt.cs" />
+    <Compile Include="Common\Evade\InvisibilityEvade.cs" />
+    <Compile Include="Common\Evade\MissileManager.cs" />
+    <Compile Include="Common\Overwirte\NewOrbwalker.cs" />
+    <Compile Include="Common\Overwirte\NewTargetSelector.cs" />
+    <Compile Include="Common\Wareness\Main.cs" />
+    <Compile Include="Common\Wareness\Trackers.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Resource\GapCloser.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Lucian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Senna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Viktor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\SennaR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Orianna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\OriannaR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Champion\Gwen\" />
+    <Folder Include="Champion\Kayle\" />
+    <Folder Include="Champion\KogMaw\" />
+    <Folder Include="Champion\Xayah\" />
+    <Folder Include="Common\Skin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\JinxE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\JinxR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\VayneE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\VayneR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Jinx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Vayne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Galeforce.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Zhonyas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Activator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Irelia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Twitch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Kaisa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Zeri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Zeri_Basic_Attack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Prediction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Blitzcrank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Ezreal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Kalista.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\FateCall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Rend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\Hextech_DrakeSquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ChampionLogo\ddd.png" />
+    <None Include="Resource\ChampionLogo\Orbwalker.png" />
+    <None Include="Resource\ChampionLogo\TS.png" />
+    <None Include="Resource\ChampionLogo\MapHack.png" />
+    <None Include="Resource\ChampionLogo\Fleet_Footwork_rune.png" />
+    <None Include="Resource\ChampionLogo\ABOS.png" />
+    <None Include="Resource\ChampionLogo\Xerath.png" />
+    <None Include="Resource\ChampionLogo\Samira.png" />
+    <None Include="Resource\ChampionLogo\Yasuo.png" />
+    <None Include="Resource\ChampionLogo\Renata_Glasc_Hostile_Takeover.png" />
+    <None Include="Resource\ChampionLogo\Renata_Glasc_Loyalty_Program.png" />
+    <None Include="Resource\ChampionLogo\Renata_Glasc_Bailout.png" />
+    <None Include="Resource\ChampionLogo\TwistedFate.png" />
+    <None Include="Resource\ChampionLogo\Thresh.png" />
+    <None Include="Resource\ChampionLogo\Kindred.png" />
+    <None Include="Resource\ChampionLogo\Jhin.png" />
+    <None Include="Resource\ChampionLogo\Caitlyn.png" />
+    <None Include="Resource\ChampionLogo\Renata.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

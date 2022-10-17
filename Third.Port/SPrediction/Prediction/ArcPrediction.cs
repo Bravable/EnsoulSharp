@@ -54,7 +54,7 @@ namespace SPrediction
         /// <returns>Prediction result as <see cref="PredictionResult"/></returns>
         public static PredictionResult GetPrediction(AIHeroClient target, float width, float delay, float missileSpeed, float range, bool collisionable)
         {
-            return GetPrediction(target, width, delay, missileSpeed, range, collisionable, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.PreviousPosition.ToVector2(), ObjectManager.Player.PreviousPosition.ToVector2());
+            return GetPrediction(target, width, delay, missileSpeed, range, collisionable, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.ServerPosition.ToVector2(), ObjectManager.Player.ServerPosition.ToVector2());
         }
 
         /// <summary>
@@ -102,7 +102,7 @@ namespace SPrediction
             if (path.Count <= 1) //if target is not moving, easy to hit
             {
                 result.HitChance = HitChance.Immobile;
-                result.CastPosition = target.PreviousPosition.ToVector2();
+                result.CastPosition = target.ServerPosition.ToVector2();
                 result.UnitPosition = result.CastPosition;
                 return result;
             }
@@ -110,7 +110,7 @@ namespace SPrediction
             if (target is AIHeroClient aiHero && aiHero.IsCastingImporantSpell())
             {
                 result.HitChance = HitChance.Immobile;
-                result.CastPosition = aiHero.PreviousPosition.ToVector2();
+                result.CastPosition = aiHero.ServerPosition.ToVector2();
                 result.UnitPosition = result.CastPosition;
                 return result;
             }
@@ -125,13 +125,13 @@ namespace SPrediction
                 return PredictionExtensions.GetDashingPrediction(target, width, delay, missileSpeed, range, collisionable, SpellType.Circle, from, rangeCheckFrom);
             }
 
-            var targetDistance = rangeCheckFrom.Distance(target.PreviousPosition);
+            var targetDistance = rangeCheckFrom.Distance(target.ServerPosition);
             var flyTime = 0f;
 
             if (missileSpeed != 0)
             {
                 var Vt = (path[path.Count - 1] - path[0]).Normalized() * target.MoveSpeed;
-                var Vs = (target.PreviousPosition.ToVector2() - rangeCheckFrom).Normalized() * missileSpeed;
+                var Vs = (target.ServerPosition.ToVector2() - rangeCheckFrom).Normalized() * missileSpeed;
                 var Vr = Vs - Vt;
 
                 flyTime = targetDistance / Vr.Length();
@@ -160,7 +160,7 @@ namespace SPrediction
                         ClipperWrapper.DefineArc(senderPos - new Vector2(875 / 2f, 20), testPos, (float)Math.PI * multp, 410, 200 * multp),
                         ClipperWrapper.DefineArc(senderPos - new Vector2(875 / 2f, 20), testPos, (float)Math.PI * multp, 410, 320 * multp));
 
-                    if (!dianaArc.IsOutside(target.PreviousPosition.ToVector2()))
+                    if (!dianaArc.IsOutside(target.ServerPosition.ToVector2()))
                     {
                         result.HitChance = HitChance.VeryHigh;
                         result.CastPosition = testPos;

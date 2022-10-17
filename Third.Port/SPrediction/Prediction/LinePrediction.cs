@@ -53,7 +53,7 @@ namespace SPrediction
         /// <returns>Prediction result as <see cref="PredictionResult"/></returns>
         public static PredictionResult GetLinePrediction(AIHeroClient target, float width, float delay, float missileSpeed, float range, bool collisionable)
         {
-            return GetLinePrediction(target, width, delay, missileSpeed, range, collisionable, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.PreviousPosition.ToVector2(), ObjectManager.Player.PreviousPosition.ToVector2());
+            return GetLinePrediction(target, width, delay, missileSpeed, range, collisionable, target.GetWaypoints(), target.AvgMovChangeTime(), target.LastMovChangeTime(), target.AvgPathLenght(), target.LastAngleDiff(), ObjectManager.Player.ServerPosition.ToVector2(), ObjectManager.Player.ServerPosition.ToVector2());
         }
 
         /// <summary>

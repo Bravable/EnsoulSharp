@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Drawing;
 using System.Linq;
+using EnsoulSharp.SDK.Rendering;
+using Color = SharpDX.Color;
 
 namespace OneKeyToWin_AIO_Sebby.Champions
 {
@@ -129,12 +130,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (Q.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, Q.Range, Color.Cyan, 1);
+                        CircleRender.Draw(Player.Position, Q.Range, Color.Cyan, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, Q.Range, Color.Cyan, 1);
+                    CircleRender.Draw(Player.Position, Q.Range, Color.Cyan, 1);
                 }
             }
 
@@ -144,12 +145,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (W.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, W.Range, Color.Orange, 1);
+                        CircleRender.Draw(Player.Position, W.Range, Color.Orange, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, W.Range, Color.Orange, 1);
+                    CircleRender.Draw(Player.Position, W.Range, Color.Orange, 1);
                 }
             }
 
@@ -159,12 +160,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (E.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, E.Range, Color.Yellow, 1);
+                        CircleRender.Draw(Player.Position, E.Range, Color.Yellow, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, E.Range, Color.Yellow, 1);
+                    CircleRender.Draw(Player.Position, E.Range, Color.Yellow, 1);
                 }
             }
 
@@ -174,12 +175,12 @@ namespace OneKeyToWin_AIO_Sebby.Champions
                 {
                     if (R.IsReady())
                     {
-                        Render.Circle.DrawCircle(Player.Position, R.Range, Color.Gray, 1);
+                        CircleRender.Draw(Player.Position, R.Range, Color.Gray, 1);
                     }
                 }
                 else
                 {
-                    Render.Circle.DrawCircle(Player.Position, R.Range, Color.Gray, 1);
+                    CircleRender.Draw(Player.Position, R.Range, Color.Gray, 1);
                 }
             }
         }
