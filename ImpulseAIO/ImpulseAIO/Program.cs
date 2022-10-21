@@ -16,6 +16,7 @@ namespace ImpulseAIO
         public static readonly string ScriptName = "Impulse";
         private static readonly Dictionary<string, Func<object>> Plugins = new Dictionary<string, Func<object>>
                                                                                {
+                                                                                   { "Belveth", () => new Champion.Belveth.Belveth() },
                                                                                    { "Lucian", () => new Champion.Lucian.Lucian() },
                                                                                    { "Viktor", () => new Champion.Viktor.Viktor()},
                                                                                    { "Senna", () => new Champion.Senna.Senna()},
