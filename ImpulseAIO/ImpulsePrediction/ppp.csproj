@@ -37,16 +37,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnsoulSharp">
-      <HintPath>C:\EnsoulSharp\Reference\EnsoulSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Loader\Reference\EnsoulSharp.dll</HintPath>
     </Reference>
     <Reference Include="EnsoulSharp.SDK">
-      <HintPath>C:\EnsoulSharp\Reference\EnsoulSharp.SDK.dll</HintPath>
+      <HintPath>..\..\..\..\Loader\Reference\EnsoulSharp.SDK.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
-      <HintPath>C:\EnsoulSharp\Reference\SharpDX.dll</HintPath>
+      <HintPath>..\..\..\..\Loader\Reference\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9">
+      <HintPath>..\..\..\..\Loader\Reference\SharpDX.Direct3D9.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Mathematics">
-      <HintPath>C:\EnsoulSharp\Reference\SharpDX.Mathematics.dll</HintPath>
+      <HintPath>..\..\..\..\Loader\Reference\SharpDX.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
